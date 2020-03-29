@@ -1,12 +1,38 @@
 ## BITCOIN NOTIFICATION ALERT APP
 -----------------------------------------------------------------------------------------------------------------------------------------------
+
 This is a python script package, bitcoin price notification to get notified for the regular updates of bitcoin price on slack, gmail and telegram. 
 The aim is to push notifications when the price of bitcoin changes at certain time interval, user can specify the time interval. By default time interval and threshold are set to 0.1 in minutes and $10000 respectively.
 When the conditions in the program are satisfied the trigger is fired and user will recieve notifications on slack, gmail and telegram.
 
+
 -----------------------------------------------------------------------------------------------------------------------------------------------
-## Installation
+## DESCRIPTION 
 -----------------------------------------------------------------------------------------------------------------------------------------------
+
+Bitcoin price is a fickle thing. You never really know where it’s going to be at the end of the day. So, instead of constantly checking various sites for the latest updates, let’s make a Python app to do the work for you.
+
+We’re going to use the popular automation website IFTTT.
+
+We’re going to create there IFTTT applets:
+
+One for emergency notification when Bitcoin price falls under a certain threshold and
+one for regular Telegram and one for Slack updates on the Bitcoin price.
+
+These will be triggered by our Python app which will consume the data from the Coindesk API.
+
+An IFTTT applet is composed of two parts: a trigger and an action.
+
+Trigger will be a webhook service provided by IFTTT.
+
+Our Python app will make an HTTP request to the webhook URL which will trigger an action. Now, this is the fun part—the action could be almost anything you want. IFTTT offers a multitude of actions like sending an email, updating a Google Spreadsheet and even calling your phone.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+## INSTALLATION
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+You might need to do these installations
 
 1. Install python version 3
 
@@ -16,32 +42,39 @@ https://www.python.org/downloads/
 
 2. Installation for PIP for windows
 
-Command : pip install 
+```
+pip install 
+```
 
 Refer this website for further read
-
 https://pip.pypa.io/en/stable/installing/
 
 
 3. Dependencies
+
 The only dependency is on the requests library. 
-Use the following command: pip install requests==2.18.4
 
+```
+pip install requests==2.18.4
+```
 
-4. Following command on terminal will install bitcoin-notifier package/module from PIP
+4. Install bitcoin-notifier package/module from PIP (on terminal)
 
+```
 pip install bitcoin-notification-f
+```
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
-## Usage
+## USAGE
 -----------------------------------------------------------------------------------------------------------------------------------------------
 Following query on terminal will provide you with all the help options 
 
-### Input 
+### INPUT
 bitcoin-notification-f -h
 
-### Output 
-usage: bitcoin_price_notification.py [-h] [--d decision] [--i interval]
+### OUTPUT 
+usage: bitcoin-notification-f [-h] [--d decision] [--i interval]
                                [--u upper threshold]
 
 Bitcoin Notification Alert
@@ -53,23 +86,25 @@ optional arguments:
   --u upper threshold  Set upper threshold limit in USD for notification
 
 
------------------------------------------------------------------------------------------------------------------------------------------------
-### Following query on terminal will provide you five prices of Bitcoin at a time at one minute interval and whenever it falls below $10000 emergency notification will be sent.
------------------------------------------------------------------------------------------------------------------------------------------------
+bitcoin-notification-f --d=Yes --i=0.1 --u=10000
 
-bitcoin_notification --d=Yes --i=0.1 --u=10000
-
+This will provide 5 prices of Bitcoin, at the specified time interval according to the code.
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
-## Join this telegram channel to get the updates :
+## TELEGRAM CHANNEL INVITE LINK - 
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
-Following is the invite link
-
-    https://t.me/Bitcoin_alert_attainU_fariya
+YOU ARE MOST WELCOME! SEE YOU THERE!
+https://t.me/Bitcoin_alert_attainU_fariya
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
+## CONTRIBUTIONS
+-----------------------------------------------------------------------------------------------------------------------------------------------
 
+Updates are always welcome, feel free to drop your suggestions! 
+Looking forward for your contribution. ❤️
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
 
